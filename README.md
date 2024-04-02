@@ -86,5 +86,24 @@ nginx-deployment-797f96787d-lm5qj   0/1     ImagePullBackOff   0          14h
 let k8sgpt to collect and ask local-ai with gpt4all-j to explain the error:
 ![k8sgpt_explain.png](picture/k8sgpt_explain.png)
 
+## Error and fix for local-ai service
+Error 1:
+```
+2:44AM ERR error downloading models: failed to download file "/models/bakllava.gguf": Get "https://huggingface.co/mys/ggml_bakllava-1/resolve/main/ggml-model-q4_k.gguf": EOF
+```
+solution:
+```
+- SSL issue with proxy, change proxy to download
+- predownload the model can also fix this
+```
 
+Error 2:
+```
+{"error":{"code":500,"message":"rpc error: code = Unavailable desc = error reading from server: EOF","type":""}}
+```
 
+solution:
+```
+get required model via local-ai model gallery:
+curl 127.0.0.1:8080/models/apply -H "Content-Type: application/json" -d '{ "url": "github:go-skynet/model-gallery/gpt4all-j.yaml", "name": "gpt4all-j" }'
+```
