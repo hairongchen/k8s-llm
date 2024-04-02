@@ -3,8 +3,8 @@
 ## prepare kubernetes cluster
 use existing kubernetes cluster or quick install via [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) or [minikube](https://minikube.sigs.k8s.io/docs/start/)
 
-also preapre storage class if you want to use persistent volume for k8sgpt.
-example of local storage class and pv/pvc as in [local_storage.md](local_storage.md)
+- preapre storage class if you want to use persistent volume for k8sgpt.
+- example of local storage class and pv/pvc as in [local_storage.md](local_storage.md)
 
 ## install local-ai
 there are two ways to install local-ai:
