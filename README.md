@@ -86,7 +86,24 @@ nginx-deployment-797f96787d-lm5qj   0/1     ImagePullBackOff   0          14h
 let k8sgpt to collect and ask local-ai with gpt4all-j to explain the error:
 ![k8sgpt_explain.png](picture/k8sgpt_explain.png)
 
-## Error and fix for local-ai service
+same question to OpenAI chaggt-4 and cooresponding answers:
+
+Question:
+```
+我在 Kubernetes 集群上运行了一个 deployment，有如下信息：
+nginx-deployment-797f96787d-9xfrb   0/1     ImagePullBackOff   0          14h
+通过 describe pod，发现如下信息：
+Error:  BackOff  pulling image "mynginx:1.14.2"
+请问出现 ImagePullBackOff 的可能原因是什么？并请提供相关命令。
+```
+Answer:
+
+![chatgpt4_answer.png](picture/chatgpt4_answer.png)
+
+
+
+
+## Errors and fixes for local-ai service
 Error 1:
 ```
 2:44AM ERR error downloading models: failed to download file "/models/bakllava.gguf": Get "https://huggingface.co/mys/ggml_bakllava-1/resolve/main/ggml-model-q4_k.gguf": EOF
