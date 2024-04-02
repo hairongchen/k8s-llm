@@ -89,7 +89,7 @@ let k8sgpt to collect and ask local-ai with gpt4all-j to explain the error:
 same question to OpenAI chaggt-4 and cooresponding answers(using promote template from k8sgpt):
 ![chatgpt4_answer.png](picture/chatgpt4_answer.png)
 
-Question in Chinese with more requests:
+Question in Chinese with more requirements:
 ```
 我在 Kubernetes 集群上运行了一个 deployment，有如下信息：
 nginx-deployment-797f96787d-9xfrb   0/1     ImagePullBackOff   0          14h
