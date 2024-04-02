@@ -1,17 +1,17 @@
 # run k8sgpt with gpt4all as backend serverd via local-ai
 
-## prepare kubernetes cluster
+## 1. prepare kubernetes cluster
 use existing kubernetes cluster or quick install via [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) or [minikube](https://minikube.sigs.k8s.io/docs/start/)
 
 - preapre storage class if you want to use persistent volume for k8sgpt.
 - example of local storage class and pv/pvc as in [local_storage.md](local_storage.md)
 
-## install local-ai
+## 2. install local-ai
 there are two ways to install local-ai:
 - install via helm chart(requires kubernetes storage class)
 - install via docker
 
-### install via docker
+### 2.1 install via docker
 some times: 
 - preapre a dirctory for local-ai models storage and mount the directory to container so the models can be reused after container restart
 - input env variable like proxy setup to container if needed
@@ -59,7 +59,7 @@ CPU:    AVX512 found OK
  └───────────────────────────────────────────────────┘
 ```
 
-## prepare local-ai models
+## 3. prepare local-ai models
 local-ai models can be downloaded from [local-ai models](https://github.com/go-skynet/model-gallery):
 ```
 curl 127.0.0.1:8080/models/apply -H "Content-Type: application/json" -d '{ "url": "github:go-skynet/model-gallery/gpt4all-j.yaml", "name": "gpt4all-j" }'
@@ -67,7 +67,7 @@ curl 127.0.0.1:8080/models/apply -H "Content-Type: application/json" -d '{ "url"
 
 more help commands of local-ai can be found at [local_ai_test.md](local_ai_test.md)
 
-## install k8sgpt
+## 4. install and run k8sgpt
 follow this [installation guide](https://github.com/k8sgpt-ai/k8sgpt#cli-installation)
 
 add backend for k8sgpt:
@@ -102,9 +102,9 @@ Answer:
 ![chatgpt4_answer_improved.png](picture/chatgpt4_answer_improved.png)
 
 
+## 5. the full log of a run is at [fulllog_of_local-ai.txt](docs/fulllog_of_local-ai.txt)
 
-
-## Errors and fixes for local-ai service
+## 6. Errors and fixes for local-ai service
 Error 1:
 ```
 2:44AM ERR error downloading models: failed to download file "/models/bakllava.gguf": Get "https://huggingface.co/mys/ggml_bakllava-1/resolve/main/ggml-model-q4_k.gguf": EOF
