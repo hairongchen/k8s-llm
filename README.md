@@ -107,3 +107,11 @@ solution:
 get required model via local-ai model gallery:
 curl 127.0.0.1:8080/models/apply -H "Content-Type: application/json" -d '{ "url": "github:go-skynet/model-gallery/gpt4all-j.yaml", "name": "gpt4all-j" }'
 ```
+
+Other issure references:
+```
+- https://github.com/mudler/LocalAI/issues/1270
+- https://github.com/k8sgpt-ai/k8sgpt-operator/issues/233
+- https://localai.io/docs/getting-started/manual/
+- https://github.com/k8sgpt-ai/k8sgpt#cli-installation
+```
