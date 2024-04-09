@@ -2,5 +2,5 @@
 see this [doc](docs/k8sgpt_with_localai.md)
 
 # 2. suoport kubectl-ai with k8sgt + local-ai
-see this [doc](docs/kubectl-ai.md)
+see this [doc](docs/kubectl_ai.md)
 
