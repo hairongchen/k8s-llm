@@ -140,3 +140,6 @@ nginx-deployment-797f96787d-xzjlz   0/1     ImagePullBackOff   0          10h
 
 “部署k8s dashboard”
 ![blazork8s-5.png](../picture/blazork8s-5.png)
+
+# 5. bill from MoonShot AI
+![bill_moonshot_AI.png](../picture/bill_moonshot_AI.png)
