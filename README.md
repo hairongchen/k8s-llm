@@ -6,3 +6,6 @@ see this [document](docs/kubectl_ai.md)
 
 # 3. use [Moonshot AI](https://www.moonshot.cn/) with [blazork8s](https://github.com/weibaohui/blazork8s) to gother and analyze k8s cluster
 see this [document](docs/blazork8s_moonshot_AI.md)
+
+# 4. use [Ali Qianwen AI](https://tongyi.aliyun.com/) with [blazork8s](https://github.com/weibaohui/blazork8s) to gother and analyze k8s cluster
+see this [document](docs/blazork8s_ali_qwen_AI.md)
