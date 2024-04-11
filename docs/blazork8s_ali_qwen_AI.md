@@ -1,5 +1,5 @@
 # 1. blazork8s Introduction
-[blazork8s](https://github.com/weibaohui/blazork8s) is a Kubernetes management tool integrating the large language models like OpenAI, MoonShot AI,  Ali Qwen, Google Gemini, XunFeiAI etc.
+[blazork8s](https://github.com/weibaohui/blazork8s) is a Kubernetes management tool integrating the large language models like OpenAI, MoonShot AI,  Ali Qwen AI, Google Gemini, XunFeiAI etc.
 
 # 2. build a k8s cluster via kind
 the kind config file kind-blazorK8s.yaml
@@ -125,14 +125,13 @@ nginx-deployment-797f96787d-wvbpk   0/1     ImagePullBackOff   0          10h
 nginx-deployment-797f96787d-xzjlz   0/1     ImagePullBackOff   0          10h
 ```
 
-## 4.3 try out analyze error via MoonShot AI
-在“巡检”中点击“分析”按钮
+## 4.3 try out analyze error via Qwen AI
 ![blazork8s_qwen-2.png](../picture/blazork8s_qwen-2.png)
 
 在“工作负载->容器组->出错的POD”中点击“智能分析”按钮
 ![blazork8s_qwen-1.png](../picture/blazork8s_qwen-1.png)
 
-## 4.4 try out deployment helper via MoonShot AI
+## 4.4 try out deployment helper via Qwen AI
 点击“聊天部署”按钮，并输入“部署一个k8s nginx应用”
 ![blazork8s_qwen-3.png](../picture/blazork8s_qwen-3.png)
 

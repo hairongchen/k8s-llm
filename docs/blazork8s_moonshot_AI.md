@@ -1,5 +1,5 @@
 # 1. blazork8s Introduction
-[blazork8s](https://github.com/weibaohui/blazork8s) is a Kubernetes management tool integrating the large language models like OpenAI, MoonShot AI,  Ali Qwen, Google Gemini, XunFeiAI etc.
+[blazork8s](https://github.com/weibaohui/blazork8s) is a Kubernetes management tool integrating the large language models like OpenAI, MoonShot AI,  Ali Qwen AI, Google Gemini, XunFeiAI etc.
 
 # 2. build a k8s cluster via kind
 the kind config file kind-blazorK8s.yaml
